@@ -1,0 +1,291 @@
+html{
+    font-family:arial;
+}
+            /* aqui empiezan los estilos para el menu responsivo  */
+        
+            .activ li{
+                padding: 0%;
+                margin: 0%;
+                text-decoration: none;
+                list-style: none;
+            }
+            nav{
+                background-color: grey;
+                    height: 80px;
+                    width: 100%;
+            }
+            .enlace{
+                position: absolute;
+                padding: 20px 50px;
+            }
+            .logo{
+                height: 40px;
+            }
+            nav ul{
+
+                float: right;
+                margin-right: 20px;
+            }
+                nav ul li{
+                    display: inline-block;
+                    line-height: 80px;
+                    margin: 0px 5px;
+                }
+                nav ul li a{
+
+                    color: white;
+                    font-size: 20px;
+                    padding: 7 px 13px;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    text-transform:uppercase;
+                }
+                li a.activ, li a:hover{
+                    background-color:rgb(204, 184, 180)  ;
+                    transition: .3s;
+                    color: black;
+                }
+                .checkbtn{
+                    font-size: 30px;
+                    color: white;
+                    float: right;
+                    line-height: 80px;
+                    margin-right: 50px;
+                    cursor: pointer;
+                   display: none;
+                    }
+
+                    #check{
+                        display: none;
+                    }
+                    
+                    /* @media( max-width: 958px){
+                        .enlace{
+                            padding-left: 20px;
+                        }
+                        nav ul li a{
+                            font-size: 16px;
+                        }
+                    }
+                    @media (max-width:858px){
+                        .checkbtn{
+                            display: block;
+                        }
+                        ul{
+                            position: fixed;
+                            width: 100%;
+                            height: 100vh;
+                            background-color: purple;
+                            top: 80px;
+                            left: -100%;
+                            text-align: center;
+                            transition: all .5s;
+
+                        }
+                        nav ul li{
+                            display: block;
+                            margin: 50px 0;
+                            line-height: 30px;
+                        }
+                        nav ul li a{
+                            font-size: 20px;
+
+                        }
+                        li a:hover, li a.activ{
+                            background: none;
+                            color:black; 
+                        }
+                        #check:checked ~ ul{
+                            left: 0;
+                        }
+                    } */
+
+
+            /* aqui terminan los estilos para el menu responisivo */
+#tituloservicios{
+    color: rgb(64, 54,53);
+    font-size: 40px;
+    text-align: center;
+    padding: 100px;
+    background-color: rgb(255,160,1);
+    font-family: arial black    ;
+}
+#PRIMERSERVICIO{
+    color: BLACK;
+    font-family: arial black;
+    font-size: 30px ;
+    text-align:left;
+}
+#idrehabilitacion{
+        color: black;
+        font-family: arial black;
+        font-size: 30px;
+
+}
+#id1{
+    color:rgb(255,160,1) ;
+        font-family: arial black;
+        text-align:inherit;
+        font-size: 30px;
+}
+#id2{
+    font-size: 20px;
+}
+.lista{
+    color:black;
+    font-size: 20px;
+}
+#id3{
+            color: black;
+            font-family: arial black;
+            font-size: 30px;
+
+} 
+
+/*                  estilos para la galeria             */
+
+.root{
+    padding: 15px;
+
+}
+.gallery{
+        display: grid;
+        grid-template-columns: auto; 
+        grid-gap:5px 5px;
+        font-size: 16px;
+        max-width: 1200px;
+        margin:auto;
+}
+.gallery_item{
+    position: relative;
+    cursor: pointer;
+}
+.gallery_img {
+    display: block;
+    max-width: 100%; 
+}
+.gallery_item::before, .gallery_item::after{
+    position: absolute;
+}
+.gallery_item::before{
+    color: #fff;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    
+}
+.gallery_item::after{
+    display: block;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+/*  FIN DEL DISEÑO PARA LA GALERIA   */
+
+/*              ESTILOS PARA FORMULARIO         */
+
+input{
+    margin: 15px;  
+    padding: 10px;
+    width: 640px;
+    text-align: center;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%);
+    margin-bottom: 12px;   
+}
+input[type="submit"]{
+    margin-bottom: 10px;
+    max-height: 300px;
+    transform: matrix(50%, 50%);
+}
+textarea{
+    margin: 15px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: justify;
+    min-width: 640px;
+    max-width: 640px;
+    min-height: 100px;
+    max-height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%);
+    margin-bottom: 5px;
+}
+
+/*------------AQUI EMPEZAMOS A DARLE EL ESTILO AL PIE DE PAGINA------------------------*/
+
+.pie-pagina{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(64,54,53);
+
+}
+.pie-pagina .grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);grid-gap: 50px;
+padding: 45 0;
+}
+.pie-pagina .grupo-1 .box-figure{
+    width: 100%;
+    height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.pie-pagina .grupo-1 .box-figure img
+{
+width:250px ;
+ }
+ .pie-pagina .grupo-1 .box h2{
+
+    color: white;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-decoration: none;
+ }
+ .pie-pagina .grupo-1 .box p{
+     color: white;
+     margin-bottom: 25px;
+     font-size: 20px;
+     text-decoration: none;
+    }
+    .pie-pagina .grupo-1 .RED-SOCIAL a{
+
+        display: inline;
+        text-decoration: none;
+        width: 60px;
+        height: 60px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 15px;
+        transition: all 300ms ease;
+    }
+    .pie-pagina .grupo-1 .RED-SOCIAL a:hover{
+        color: rgb(255,160,1); 
+    }
+.pie-pagina .grupo-2{
+    background-color: rgb(80, 66, 65);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+ @media screen and (max-widht: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35 0;
+        }
+     
+ }
+/*---------AQUI TERMINA LOS DISEÑOS DE EL PIE DE PAGINA---------------------------*/

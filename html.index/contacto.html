@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<TITLE> FONSECA REPARACION Y MANTENIMIENTO DIESEL</TITLE>
+<meta charset="UTF-8">
+
+<link rel = "stylesheet" href="../estilos.css/index.css">
+<body>
+<head >
+    <script src="https://kit.fontawesome.com/b0c612ccd8.js" crossorigin="anonymous"></script>
+ <!--    <link rel="icon" type="image/vnd.microsoft.icon" href="logoicono.png"> -->
+
+<!--                aqui empieza el nuevo menu desplegable          -->
+
+    <nav class="menu-index"> <!--la clase "menu-index" es para crear el menu sticker-->
+<input type="checkbox" id="check">
+<label for="checkbtn" class="checkbtn">
+    <i  class="fa fa-bars"> </i>
+</label>
+
+<a href="#" class="enlace">
+    <img class="logo" src="../logoicono.png" alt="logo">
+ 
+</a>
+<ul>
+    <li> <a class="active" href="../html.index/index.html"> INICIO</a>  </li>
+    <li> <a href="../html.index/servicios.html"> SERVICIOS</a> </li>
+    <li> <a href="../html.index/nosotros.html"> NOSOTROS</a> </li>
+    <li> <a href="galeria.html">GALERIA</a> </li>
+    <li> <a href="../html.index/clientes.html">CLIENTES</a> </li>
+    <li> <a href="../html.index/contacto.html">CONTACTO</a>  </li>
+</ul>
+
+    </nav>
+        <section>
+        </section>
+
+
+</head>
+
+<!--                    termino del menu desplegable                -->
+ <br>
+ <br>
+ <br>
+ <br>
+</header>
+
+<!--                    formulario                      -->
+<form method="post">
+<input type="text" placeholder="NOMBRE" name="nombre"> 
+<input type="text" placeholder="CORREO ELECTTONICO" name="correo">
+<input type="text" placeholder="NUMERO DE TELEFONO" name="numero">
+<textarea placeholder="ASUNTO" name="msg" ></textarea>
+<br><br><br><br>
+<input type="submit">
+</form>
+<!--                    end formulario                  -->
+
+<!--      HASTA AQUI TERMINA EL ETIQUETADO DEL ENCABEZADO (MENU            )-->
+
+<br><br><br><br><br><br><br><br><br><br>
+<!-- ---------------  AQUI EMPIEZA EL ETIQUETADO DE EL PIE DE PAGINA-------------------  -->
+            <footer class="pie-pagina">
+                <div class="grupo-1">           
+                        <div class="box">
+                            <H2>DIRECCION</H2>
+                            <P>Carretera la partida, Granja la barranca, 
+                                648, Ejido San Agustin, 27405, Torreon Coahuila
+                            </P>
+                        </div>
+                        <div class="box">
+                                <h2>HORARIOS:
+                                </h2>
+                        </div>
+                        <div class="box">
+                            <H2> CONOCENOS:</H2>
+                            <DIV class="RED-SOCIAL">
+                            <a href="#">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                    </a>
+                            <a href="#">
+                                    <a href="#" class="fa fa-linkedin"></a>
+                                    </a>
+                            <a href="#">
+                                    <a href="#" class="fa fa-whatsapp"></a>
+                                    </a>
+                            </DIV>
+                            </a>
+                        </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy;2022 <b>FONSECA REPARACION Y MANTENIMIENTO DIESEL</b> - Todos los derechos reservados.</small>
+                </div>
+            </footer>
+            
+<!-- ---------------  AQUI TERMINA EL ETIQUETADO DE EL PIE DE PAGINA-------------------  -->
+
+<? php
+include("formulario.php")
+?>
+</body>
+</html>
